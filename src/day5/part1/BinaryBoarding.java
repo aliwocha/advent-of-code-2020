@@ -1,4 +1,4 @@
-package day5;
+package day5.part1;
 
 public class BinaryBoarding {
 
