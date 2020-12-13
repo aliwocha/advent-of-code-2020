@@ -14,9 +14,9 @@ public class ReportRepair {
     public static void main(String[] args) {
         int[] tab = readNumbers();
 
-        System.out.println("The result for two numbers is: " + getResultForTwo(tab));
+        System.out.println("The result for two numbers is: " + getResultForTwo(tab)); // Part 1
         System.out.println("-------");
-        System.out.println("The result for three numbers is: " + getResultForThree(tab));
+        System.out.println("The result for three numbers is: " + getResultForThree(tab)); // Part 2
     }
 
     private static long getResultForTwo(int[] tab) {
