@@ -1,4 +1,4 @@
-package day6.part2;
+package day6;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,13 +11,30 @@ public class CustomCustoms {
     public static void main(String[] args) {
         String[] answers = readLines().split("\\s\\s");
 
-        int sum = 0;
+        int countRepetitive = 0;
         for(String answer : answers) {
             String[] groupAnswers = answer.split("\\s");
-            sum += sumRepetitiveCounts(groupAnswers);
+            countRepetitive += sumRepetitiveCounts(groupAnswers);
         }
 
-        System.out.println("The sum of repetitive counts: " + sum);
+        System.out.println("The sum of unique counts: " + sumUniqueCounts(answers)); // Part 1
+        System.out.println("The sum of repetitive counts: " + countRepetitive); // Part 2
+    }
+
+    private static int sumUniqueCounts(String[] answers) {
+        int countUnique = 0;
+        for(String groupAnswer : answers) {
+            Set<Character> uniqueLetters = new HashSet<>();
+            for(int i = 0; i < groupAnswer.length(); i++) {
+                Character letter = groupAnswer.charAt(i);
+                if(!letter.toString().equals(" ")) {
+                    uniqueLetters.add(letter);
+                }
+            }
+            countUnique += uniqueLetters.size();
+        }
+
+        return countUnique;
     }
 
     private static int sumRepetitiveCounts(String[] groupAnswers) {
