@@ -6,7 +6,7 @@ import java.util.*;
 
 public class PassportProcessing {
 
-    static final String FILE_NAME = "passports.txt";
+    static final String FILE_NAME = "./src/day4/passports.txt";
     static final List<String> REQUIRED_PROPERTIES = Arrays.asList("byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid");
 
     public static void main(String[] args) {

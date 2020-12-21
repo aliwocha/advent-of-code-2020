@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class PasswordPhilosophy {
 
-    static final String FILE_NAME = "passwords.txt";
+    static final String FILE_NAME = "./src/day2/passwords.txt";
 
     public static void main(String[] args) {
         List<String> list = readLines();

@@ -6,7 +6,7 @@ import java.util.*;
 
 public class HandyHaversacks {
 
-    private static final String FILE_NAME = "rules.txt";
+    private static final String FILE_NAME = "./src/day7/rules.txt";
     private static List<String> rules = readLines();
     private static Set<String> colors = new HashSet<>();
 

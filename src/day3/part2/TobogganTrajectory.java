@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class TobogganTrajectory {
 
-    static final String FILE_NAME = "trees.txt";
+    static final String FILE_NAME = "./src/day3/trees.txt";
 
     public static void main(String[] args) {
         List<String> list = readLines();
@@ -47,6 +47,7 @@ public class TobogganTrajectory {
             int treesEncountered = countTrees(slope, extendedList, verticalPosition, horizontalPosition);
             System.out.println("Number of trees encountered in configuration " + index + ": " + treesEncountered);
             productOfTreesEncountered *= treesEncountered;
+            index++;
         }
 
         return  productOfTreesEncountered;

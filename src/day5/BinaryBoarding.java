@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
 
 public class BinaryBoarding {
 
-    static final String FILE_NAME = "plane_seats.txt";
+    static final String FILE_NAME = "./src/day5/plane_seats.txt";
 
     public static void main(String[] args) {
         List<String> list = readLines();

@@ -6,7 +6,7 @@ import java.util.*;
 
 public class CustomCustoms {
 
-    private static final String FILE_NAME = "answers.txt";
+    private static final String FILE_NAME = "./src/day6/answers.txt";
 
     public static void main(String[] args) {
         String[] answers = readLines().split("\\s\\s");

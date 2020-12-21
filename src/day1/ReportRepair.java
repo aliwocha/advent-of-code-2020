@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class ReportRepair {
 
-    static final String FILE_NAME = "expenses.txt";
+    static final String FILE_NAME = "./src/day1/expenses.txt";
     static final int SUM = 2020;
 
     public static void main(String[] args) {

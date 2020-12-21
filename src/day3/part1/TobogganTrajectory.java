@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class TobogganTrajectory {
 
-    static final String FILE_NAME = "trees.txt";
+    static final String FILE_NAME = "./src/day3/trees.txt";
     static final int MOVE_DOWN = 1;
     static final int MOVE_RIGHT = 3;
 
